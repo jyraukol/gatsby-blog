@@ -53,22 +53,9 @@ class Layout extends React.Component {
       )
     }
     return (
-      <div>
-        <header
-        style={{
-          textAlign: 'center',
-         
-        }}>
-        <div style={{
-           backgroundImage: "url('/road.jpg')",
-           backgroundPosition: 'center',
-           height: 500,
-           filter: 'blur(5px)',
-           overflow: 'hidden',
-           backgroundRepeat: 'none',
-           position: 'relative'
-        }} />
-          <h1>Moro nääs</h1>
+      <div style={{ display: 'flex', backgroundColor: '#dbd3c9', height: '100%' }}>
+        <header style={{ borderRight: '1px solid #88a0a8', padding: '1rem 1rem', backgroundColor: '#546a76' }}>
+          {header}
         </header>
         <div
           style={{
@@ -76,9 +63,9 @@ class Layout extends React.Component {
             marginRight: 'auto',
             maxWidth: rhythm(24),
             padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
+            
           }}
         >
-          {header}
           {children}
         </div>
       </div>

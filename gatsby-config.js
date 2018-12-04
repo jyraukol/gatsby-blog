@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'Öri öri sivut',
+    title: 'JR Webzone',
     author: 'Jyri Raukola',
     description: 'Homepage',
     siteUrl: 'https://gatsbyjs.github.io/gatsby-starter-blog/',
