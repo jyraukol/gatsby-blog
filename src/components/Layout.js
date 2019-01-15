@@ -53,20 +53,29 @@ class Layout extends React.Component {
       )
     }
     return (
-      <div style={{ display: 'flex', backgroundColor: '#dbd3c9', height: '100%' }}>
-        <header style={{ borderRight: '1px solid #88a0a8', padding: '1rem 1rem', backgroundColor: '#546a76' }}>
-          {header}
-        </header>
+      <div>
         <div
-          style={{
-            marginLeft: 'auto',
-            marginRight: 'auto',
-            maxWidth: rhythm(24),
-            padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
-            
-          }}
+          style={{ display: 'flex', height: '100%', minHeight: '100vh', border: '2px solid goldenrod', backgroundColor: '#dbd3c9' }}
         >
-          {children}
+          <header
+            style={{
+              borderRight: '1px solid #88a0a8',
+              padding: '1rem 1rem',
+              backgroundColor: '#546a76',
+            }}
+          >
+            {header}
+          </header>
+          <div
+            style={{
+              marginLeft: 'auto',
+              marginRight: 'auto',
+              maxWidth: rhythm(24),
+              padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
+            }}
+          >
+            {children}
+          </div>
         </div>
       </div>
     )
