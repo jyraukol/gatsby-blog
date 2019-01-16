@@ -55,7 +55,7 @@ class Layout extends React.Component {
     return (
       <div>
         <div
-          style={{ display: 'flex', height: '100%', minHeight: '100vh', border: '2px solid goldenrod', backgroundColor: '#dbd3c9' }}
+          style={{ display: 'flex', height: '100%', minHeight: '100vh', maxWidth: '100%', backgroundColor: '#dbd3c9' }}
         >
           <header
             style={{
@@ -68,10 +68,9 @@ class Layout extends React.Component {
           </header>
           <div
             style={{
-              marginLeft: 'auto',
-              marginRight: 'auto',
-              maxWidth: rhythm(24),
+              marginLeft: `${rhythm(2.5)}`,
               padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
+              maxWidth: '1220px',
             }}
           >
             {children}
