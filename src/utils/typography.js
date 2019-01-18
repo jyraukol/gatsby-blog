@@ -2,7 +2,9 @@ import Typography from 'typography'
 import Wordpress2016 from 'typography-theme-wordpress-2016'
 import twinPeaksTheme from 'typography-theme-twin-peaks'
 
-twinPeaksTheme.overrideThemeStyles = () => ({
+Wordpress2016.baseFontSize = '20px'
+
+Wordpress2016.overrideThemeStyles = () => ({
   a: {
     textShadow: 'none',
   },
@@ -10,7 +12,7 @@ twinPeaksTheme.overrideThemeStyles = () => ({
 
 delete Wordpress2016.googleFonts
 
-const typography = new Typography(twinPeaksTheme)
+const typography = new Typography(Wordpress2016)
 
 // Hot reload typography in development.
 if (process.env.NODE_ENV !== 'production') {

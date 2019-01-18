@@ -9,7 +9,7 @@ class Layout extends React.Component {
     const rootPath = `${__PATH_PREFIX__}/`
     let header
 
-    if (location.pathname === rootPath) {
+    //if (location.pathname === rootPath) {
       header = (
         <h1
           style={{
@@ -30,7 +30,7 @@ class Layout extends React.Component {
           </Link>
         </h1>
       )
-    } else {
+    /*} else {
       header = (
         <h3
           style={{
@@ -51,7 +51,7 @@ class Layout extends React.Component {
           </Link>
         </h3>
       )
-    }
+    }*/
     return (
       <div>
         <div
