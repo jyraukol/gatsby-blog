@@ -1,18 +1,20 @@
 import Typography from 'typography'
 import Wordpress2016 from 'typography-theme-wordpress-2016'
 import twinPeaksTheme from 'typography-theme-twin-peaks'
+import sternGroveTheme from 'typography-theme-stern-grove'
 
-Wordpress2016.baseFontSize = '14px'
+const theme = sternGroveTheme 
+theme.baseFontSize = '14px'
 
-Wordpress2016.overrideThemeStyles = () => ({
+theme.overrideThemeStyles = () => ({
   a: {
     textShadow: 'none',
   },
 })
 
-delete Wordpress2016.googleFonts
 
-const typography = new Typography(Wordpress2016)
+
+const typography = new Typography(theme)
 
 // Hot reload typography in development.
 if (process.env.NODE_ENV !== 'production') {
