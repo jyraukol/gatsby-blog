@@ -2,7 +2,7 @@ import Typography from 'typography'
 import Wordpress2016 from 'typography-theme-wordpress-2016'
 import twinPeaksTheme from 'typography-theme-twin-peaks'
 
-Wordpress2016.baseFontSize = '20px'
+Wordpress2016.baseFontSize = '14px'
 
 Wordpress2016.overrideThemeStyles = () => ({
   a: {
