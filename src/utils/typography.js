@@ -1,19 +1,8 @@
 import Typography from 'typography'
-import Wordpress2016 from 'typography-theme-wordpress-2016'
-import twinPeaksTheme from 'typography-theme-twin-peaks'
 import sternGroveTheme from 'typography-theme-stern-grove'
 
 const theme = sternGroveTheme 
-theme.baseFontSize = '14px'
-
-theme.overrideThemeStyles = () => ({
-  a: {
-    textShadow: 'none',
-  },
-})
-
-
-
+theme.baseFontSize = '16px'
 const typography = new Typography(theme)
 
 // Hot reload typography in development.
