@@ -53,30 +53,22 @@ class Layout extends React.Component {
       )
     }*/
     return (
-      <div>
-        <div
-          style={{ display: 'flex', height: '100%', minHeight: '100vh', maxWidth: '100%', backgroundColor: '#dbd3c9' }}
-        >
-          <header
-            style={{
-              borderRight: '1px solid #88a0a8',
-              padding: '1rem 1rem',
-              backgroundColor: '#546a76',
-            }}
-          >
-            {header}
-          </header>
-          <div
-            style={{
-              marginLeft: `${rhythm(2.5)}`,
-              padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
-              maxWidth: '1220px',
-            }}
-          >
-            {children}
-          </div>
-        </div>
-      </div>
+      <div
+        style={{
+          marginLeft: `auto`,
+          marginRight: `auto`,
+          maxWidth: rhythm(24),
+          padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
+        }}
+      >
+        {header}
+        {children}
+        <footer>
+          © {new Date().getFullYear()}, Built with
+          {` `}
+          <a href="https://www.gatsbyjs.org">Gatsby</a>
+        </footer>
+</div>
     )
   }
 }
