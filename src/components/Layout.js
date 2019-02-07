@@ -15,7 +15,7 @@ class Layout extends React.Component {
           marginLeft: `auto`,
           marginRight: `auto`,
           backgroundColor: `#f8f8ff`,
-          borderRadius: `0 0 50% 0`,    
+          borderRadius: `10px`,    
           boxShadow: `5px 10px 5px slategrey`,
           maxWidth: rhythm(34),
           padding: `${rhythm(1.5)} ${rhythm(3)}`,
