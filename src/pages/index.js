@@ -3,7 +3,6 @@ import { Link, graphql } from 'gatsby'
 import get from 'lodash/get'
 import Helmet from 'react-helmet'
 
-import Bio from '../components/Bio'
 import Layout from '../components/Layout'
 import { rhythm } from '../utils/typography'
 
@@ -24,6 +23,10 @@ class BlogIndex extends React.Component {
           title={siteTitle}
         />
         <h3>Heeyoooo!</h3>
+        <p>
+          Personal website of <Link to={'about'}>Jyri Raukola</Link>
+        </p>
+        <hr />
         {posts.map(({ node }) => {
           const title = get(node, 'frontmatter.title') || node.fields.slug
           return (

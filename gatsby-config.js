@@ -3,7 +3,7 @@ module.exports = {
     title: 'JR Webzone',
     author: 'Jyri Raukola',
     description: 'Homepage',
-    siteUrl: 'https://gatsbyjs.github.io/gatsby-starter-blog/',
+    siteUrl: 'http://jyrirauko.la',
   },
   plugins: [
     {
